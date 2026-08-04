@@ -1,0 +1,75 @@
+{
+    "navigation": {
+        "myStory": "Mon parcours",
+        "mission": "Ma mission",
+        "books": "Livres",
+        "photography": "Photographie",
+        "givingBack": "Mon engagement",
+        "contact": "Contact",
+        "language": "English"
+    },
+    "hero": {
+        "label": "AUTEUR • PHOTOGRAPHE • CONTEUSE",
+        "headingLineOne": "Des histoires qui inspirent.",
+        "headingLineTwo": "Des parcours qui comptent.",
+        "description": "Chaque parcours laisse une histoire. Chaque histoire a le pouvoir de changer une vie.",
+        "booksButton": "Découvrir mes livres",
+        "storyButton": "Découvrir mon parcours"
+    },
+    "meetKai": {
+        "label": "DÉCOUVRIR KAI",
+        "heading": "Bien plus qu’un auteur.",
+        "paragraphOne": "Chaque chapitre de ma vie a façonné les histoires que je raconte aujourd’hui.",
+        "paragraphTwo": "De mon service dans la police et l’armée britannique à mes explorations à travers la photographie, le sport d’endurance et les voyages, j’ai appris que chaque expérience possède le pouvoir de nous transformer.",
+        "paragraphThree": "L’écriture me permet de réunir toutes ces expériences afin de partager des histoires qui inspirent l’espoir, fortifient la foi, éveillent la curiosité et nous rappellent que même une vie ordinaire peut produire une différence extraordinaire.",
+        "button": "Découvrir mon parcours →"
+    },
+    "story": {
+        "label": "MON PARCOURS",
+        "heading": "Le parcours qui m’a façonnée",
+        "introduction": "Chaque chapitre a préparé le suivant. Chaque expérience fait désormais partie de l’histoire que j’ai le privilège de partager.",
+        "chapters": [
+            {
+                "number": "01",
+                "title": "Photographe",
+                "description": "Apprendre à remarquer la beauté, préserver les instants précieux et raconter des histoires à travers les images."
+            },
+            {
+                "number": "02",
+                "title": "Policière",
+                "description": "Servir la communauté avec responsabilité, intégrité et compassion."
+            },
+            {
+                "number": "03",
+                "title": "Bénévole dans le scoutisme",
+                "description": "Faire du bénévolat à Maurice et au Royaume-Uni afin d’aider les jeunes à développer leur confiance, leur résilience et leurs compétences pratiques."
+            },
+            {
+                "number": "04",
+                "title": "Soldate de l’armée britannique",
+                "description": "Développer la discipline, le leadership, l’esprit d’équipe et la résilience grâce au service militaire."
+            },
+            {
+                "number": "05",
+                "title": "Auteur",
+                "description": "Réunir chaque chapitre de ma vie à travers des livres, des récits et des idées qui encouragent les autres."
+            },
+            {
+                "number": "06",
+                "title": "Agir pour les autres",
+                "description": "Soutenir les enfants et créer des projets qui apportent de l’espoir, des possibilités et une aide concrète."
+            }
+        ]
+    },
+    "mission": {
+        "label": "MA RAISON D’ÊTRE",
+        "heading": "Il y a de l’espoir pour un monde meilleur.",
+        "lead": "Je crois que la réussite ne devrait jamais être mesurée uniquement par ce que nous accomplissons, mais par la différence que nous faisons dans la vie des autres.",
+        "missionTitle": "Ma mission",
+        "missionText": "Mon ambition ne se limite pas à publier des livres ou à bâtir une carrière d’auteur. Je souhaite créer des œuvres qui inspirent l’espoir, éveillent la curiosité, fortifient la foi, préservent des histoires porteuses de sens et, lorsque cela est possible, apportent une aide concrète à ceux qui en ont le plus besoin.",
+        "pledgeTitle": "Mon engagement",
+        "pledgeText": "Je ne peux pas changer le monde entier, mais je peux changer le monde d’une personne. J’utiliserai chaque occasion, chaque livre et chaque réussite non seulement pour construire une carrière, mais aussi pour laisser un héritage de bonté, de compassion et de service.",
+        "quote": "J’espère que l’on se souviendra de moi non pas pour ce que j’ai accompli, mais pour les personnes que j’ai aidées.",
+        "button": "Découvrir ma mission"
+    }
+}

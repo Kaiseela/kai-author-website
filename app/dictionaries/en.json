@@ -1,0 +1,75 @@
+{
+    "navigation": {
+        "myStory": "My Story",
+        "mission": "My Mission",
+        "books": "Books",
+        "photography": "Photography",
+        "givingBack": "Giving Back",
+        "contact": "Contact",
+        "language": "Français"
+    },
+    "hero": {
+        "label": "AUTHOR • PHOTOGRAPHER • STORYTELLER",
+        "headingLineOne": "Stories that inspire.",
+        "headingLineTwo": "Journeys that matter.",
+        "description": "Every journey leaves a story. Every story has the power to change a life.",
+        "booksButton": "Explore My Books",
+        "storyButton": "Discover My Story"
+    },
+    "meetKai": {
+        "label": "MEET KAI",
+        "heading": "More than an author.",
+        "paragraphOne": "Every chapter of my life has shaped the stories I tell today.",
+        "paragraphTwo": "From serving as a police officer and British Army soldier to exploring the world through photography, endurance sport and travel, I have learned that every experience has the power to change us.",
+        "paragraphThree": "Writing allows me to bring those experiences together—sharing stories that inspire hope, strengthen faith, encourage curiosity and remind us that even ordinary lives can make an extraordinary difference.",
+        "button": "Discover My Story →"
+    },
+    "story": {
+        "label": "MY STORY",
+        "heading": "The Journey That Shaped Me",
+        "introduction": "Every chapter has shaped the next. Every experience has become part of the story I now have the privilege to share.",
+        "chapters": [
+            {
+                "number": "01",
+                "title": "Photographer",
+                "description": "Learning to notice beauty, preserve meaningful moments and tell stories through images."
+            },
+            {
+                "number": "02",
+                "title": "Police Officer",
+                "description": "Serving the community with responsibility, integrity and compassion."
+            },
+            {
+                "number": "03",
+                "title": "Scout Volunteer",
+                "description": "Volunteering in Mauritius and the United Kingdom, helping young people build confidence, resilience and practical skills."
+            },
+            {
+                "number": "04",
+                "title": "British Army Soldier",
+                "description": "Developing discipline, leadership, teamwork and resilience through military service."
+            },
+            {
+                "number": "05",
+                "title": "Author",
+                "description": "Bringing every chapter of my life together through books, stories and ideas that encourage others."
+            },
+            {
+                "number": "06",
+                "title": "Giving Back",
+                "description": "Supporting children and creating projects that offer hope, opportunity and practical help."
+            }
+        ]
+    },
+    "mission": {
+        "label": "MY PURPOSE",
+        "heading": "There is hope for a better world.",
+        "lead": "I believe success should never be measured only by what we achieve, but by the difference we make in the lives of others.",
+        "missionTitle": "My Mission",
+        "missionText": "My ambition is not simply to publish books or build a career as an author. It is to create work that inspires hope, encourages curiosity, strengthens faith, preserves meaningful stories and, whenever possible, provides practical help to those who need it most.",
+        "pledgeTitle": "My Pledge",
+        "pledgeText": "I cannot change the whole world, but I can change someone’s world. I will use every opportunity, every book and every success not only to build a career, but to build a legacy of kindness, compassion and service.",
+        "quote": "I hope I am remembered not for what I achieved, but for the people I helped.",
+        "button": "Learn About My Mission"
+    }
+}
