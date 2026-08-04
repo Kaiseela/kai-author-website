@@ -1448,52 +1448,53 @@ body {
 
 /* Mobile adjustments */
 
+/* FINAL LAPTOP OVERLAP FIX */
 @media (min-width: 701px) and (max-width: 1400px) {
-
   .hero {
-    min-height: 110vh;
     height: auto;
-    overflow: visible;
-    display: flex;
-    align-items: center;
+    min-height: max(100svh, 880px);
+    overflow: hidden;
   }
 
   .hero-content {
-    width: min(760px, 60%);
-    max-width: 760px;
-    padding: 120px 5vw 70px;
+    width: min(720px, 62%);
+    max-width: 720px;
+    padding: 120px 5vw 80px;
   }
 
   .hero-content h1 {
-    font-size: clamp(3rem, 5vw, 4.9rem);
-    line-height: 0.95;
-    max-width: 680px;
+    max-width: 650px;
+    margin: 0;
+    font-size: clamp(3rem, 5vw, 4.6rem);
+    line-height: 0.96;
   }
 
   .hero-content p,
   .hero-description {
-    margin-top: 18px;
-    font-size: 1rem;
-    line-height: 1.6;
     max-width: 620px;
+    margin-top: 18px;
+    font-size: 0.98rem;
+    line-height: 1.5;
   }
 
   .button-row {
+    position: static;
     display: flex;
     flex-wrap: wrap;
-    gap: 14px;
-    margin-top: 24px;
+    gap: 12px;
+    margin-top: 20px;
+    padding-bottom: 0;
   }
 
   .primary-button,
   .secondary-button {
     position: static;
-    padding: 14px 24px;
+    display: inline-flex;
+    width: auto;
+    min-height: 46px;
+    padding: 12px 20px;
+    align-items: center;
+    justify-content: center;
     white-space: nowrap;
-  }
-
-  .hero-image {
-    object-fit: cover;
-    object-position: center;
   }
 }
