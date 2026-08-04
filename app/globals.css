@@ -1498,3 +1498,50 @@ body {
     white-space: nowrap;
   }
 }
+
+/* FIX HERO ON WIDE, SHORT LAPTOP SCREENS */
+@media (min-width: 701px) and (max-height: 900px) {
+  .hero {
+    min-height: 100vh;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    width: 700px;
+    max-width: 58%;
+    padding: 135px 0 45px 6vw;
+  }
+
+  .hero-content h1 {
+    max-width: 650px;
+    font-size: clamp(3.4rem, 5vw, 4.8rem);
+    line-height: 0.94;
+  }
+
+  .hero-content p,
+  .hero-description {
+    max-width: 620px;
+    margin-top: 16px;
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+
+  .button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  .primary-button,
+  .secondary-button {
+    display: inline-flex;
+    width: auto;
+    min-height: 44px;
+    padding: 11px 19px;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+}
