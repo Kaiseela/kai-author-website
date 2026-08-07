@@ -1,0 +1,88 @@
+:root {
+    /* ----------------------------------------
+     COLOUR SYSTEM
+     ---------------------------------------- */
+
+    --color-paper: #f4efe7;
+    --color-stone: #ded6ca;
+    --color-charcoal: #24211f;
+    --color-ink: #2f2b28;
+    --color-bronze: #9a7748;
+    --color-forest: #39453c;
+
+    /* ----------------------------------------
+     TEXT
+     ---------------------------------------- */
+
+    --text-primary: var(--color-ink);
+    --text-light: #f8f4ee;
+    --text-muted: #746d66;
+
+    /* ----------------------------------------
+     TYPOGRAPHY
+     ---------------------------------------- */
+
+    --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+    --font-body: Arial, Helvetica, sans-serif;
+
+    --text-xs: 0.75rem;
+    --text-sm: 0.9rem;
+    --text-base: 1rem;
+    --text-lg: 1.2rem;
+    --text-xl: 1.5rem;
+
+    --display-sm: clamp(2.8rem, 6vw, 5rem);
+    --display-md: clamp(4rem, 8vw, 7rem);
+    --display-lg: clamp(5rem, 10vw, 9rem);
+
+    /* ----------------------------------------
+     SPACING
+     ---------------------------------------- */
+
+    --space-1: 8px;
+    --space-2: 16px;
+    --space-3: 24px;
+    --space-4: 40px;
+    --space-5: 64px;
+    --space-6: 96px;
+    --space-7: 128px;
+    --space-8: 160px;
+
+    /* ----------------------------------------
+     WIDTHS
+     ---------------------------------------- */
+
+    --content-narrow: 720px;
+    --content-medium: 1000px;
+    --content-wide: 1280px;
+
+    /* ----------------------------------------
+     LINES / BORDERS
+     ---------------------------------------- */
+
+    --line-soft: rgba(47, 43, 40, 0.14);
+    --line-light: rgba(255, 255, 255, 0.18);
+
+    /* ----------------------------------------
+     MOTION
+     ---------------------------------------- */
+
+    --motion-fast: 180ms;
+    --motion-medium: 320ms;
+    --motion-slow: 700ms;
+
+    --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+
+    /* ----------------------------------------
+     RADIUS
+     ---------------------------------------- */
+
+    --radius-small: 2px;
+    --radius-medium: 6px;
+
+    /* ----------------------------------------
+     SHADOWS
+     ---------------------------------------- */
+
+    --shadow-soft: 0 20px 60px rgba(0, 0, 0, 0.08);
+}

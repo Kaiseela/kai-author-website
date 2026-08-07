@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "./dictionaries";
+import HeroV2 from "../components/HeroV2";
+
 
 type LanguagePageProps = {
     params: Promise<{
