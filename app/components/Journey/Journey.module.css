@@ -1,0 +1,1195 @@
+.journey {
+    background: #f3eee5;
+    color: #292521;
+}
+
+/* ========================================
+   CHAPTER INTRODUCTION
+   ======================================== */
+
+.introduction {
+    width: min(1320px, calc(100% - 96px));
+    margin: 0 auto;
+    padding: 160px 0 175px;
+}
+
+.chapterMarker {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: min(330px, 100%);
+    margin-bottom: 68px;
+}
+
+.chapterMarker span {
+    flex: 0 0 auto;
+    color: #8b6b45;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.26em;
+}
+
+.chapterMarker i {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: rgba(47, 43, 40, 0.18);
+}
+
+.question {
+    max-width: 540px;
+    margin: 0 0 42px;
+    color: #746b61;
+    font-family: var(--font-display);
+    font-size: clamp(1.35rem, 2vw, 1.85rem);
+    font-style: italic;
+    line-height: 1.45;
+}
+
+.introduction h2 {
+    max-width: 980px;
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(4.5rem, 8.5vw, 8.5rem);
+    font-weight: 400;
+    line-height: 0.85;
+    letter-spacing: -0.05em;
+}
+
+.introText {
+    max-width: 530px;
+    margin: 65px 0 0 auto;
+    color: #686057;
+    font-size: 1.02rem;
+    font-weight: 300;
+    line-height: 1.85;
+}
+
+/* ========================================
+   PHOTOGRAPHER — CINEMATIC
+   ======================================== */
+
+.story {
+    position: relative;
+}
+
+.imageStage {
+    position: relative;
+    min-height: 100svh;
+    overflow: hidden;
+    background: #171614;
+}
+
+.image {
+    object-fit: cover;
+    object-position: center;
+    transition: transform 1.5s var(--ease-soft);
+}
+
+.story:hover .image {
+    transform: scale(1.018);
+}
+
+.imageShade {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+        linear-gradient(90deg,
+            rgba(15, 14, 12, 0.7) 0%,
+            rgba(15, 14, 12, 0.22) 48%,
+            rgba(15, 14, 12, 0.08) 100%),
+        linear-gradient(0deg,
+            rgba(15, 14, 12, 0.36) 0%,
+            transparent 48%);
+}
+
+.imageTitle {
+    position: absolute;
+    bottom: 80px;
+    left: max(48px, calc((100vw - 1320px) / 2));
+    z-index: 2;
+    color: #f8f3eb;
+}
+
+.imageTitle span {
+    display: block;
+    margin-bottom: 25px;
+    color: #c29a66;
+    font-size: 0.61rem;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+}
+
+.imageTitle h3 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(4.7rem, 8.5vw, 8.8rem);
+    font-weight: 400;
+    line-height: 0.82;
+    letter-spacing: -0.05em;
+}
+
+/* ========================================
+   PHOTOGRAPHER REFLECTION
+   ======================================== */
+
+.reflection {
+    display: grid;
+    grid-template-columns: 160px minmax(0, 680px);
+    gap: 70px;
+    justify-content: center;
+    padding: 145px 48px 170px;
+    background: #ebe3d6;
+}
+
+.reflectionNumber {
+    padding-top: 6px;
+    color: rgba(47, 43, 40, 0.23);
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+}
+
+.reflectionBody {
+    max-width: 680px;
+}
+
+.role {
+    margin: 0 0 36px;
+    color: #8b6b45;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+}
+
+.lead {
+    margin: 0;
+    color: #292521;
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 4vw, 4rem);
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+}
+
+.body {
+    max-width: 570px;
+    margin: 52px 0 0;
+    color: #655d54;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.9;
+}
+
+.reflection blockquote {
+    max-width: 610px;
+    margin: 72px 0 0;
+    padding: 38px 0 0;
+    border-top: 1px solid rgba(47, 43, 40, 0.18);
+    color: #423c36;
+    font-family: var(--font-display);
+    font-size: clamp(1.7rem, 2.8vw, 2.6rem);
+    font-style: italic;
+    line-height: 1.35;
+}
+
+/* ========================================
+   SCOUT — PORTRAIT EDITORIAL
+   ======================================== */
+
+.scoutStory {
+    position: relative;
+    overflow: hidden;
+    padding: 155px 48px 175px;
+    background: #1c1b18;
+    color: #f7f2ea;
+}
+
+.scoutInner {
+    display: grid;
+    grid-template-columns: 0.9fr minmax(340px, 520px) 0.9fr;
+    grid-template-areas:
+        "heading portrait reflection";
+    gap: clamp(45px, 6vw, 100px);
+    align-items: center;
+    width: min(1380px, 100%);
+    margin: 0 auto;
+}
+
+.scoutHeading {
+    grid-area: heading;
+    align-self: start;
+    padding-top: 70px;
+}
+
+.scoutEyebrow {
+    margin: 0 0 27px;
+    color: #c29a66;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.27em;
+}
+
+.scoutHeading h3 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(4rem, 6vw, 6.4rem);
+    font-weight: 400;
+    line-height: 0.88;
+    letter-spacing: -0.045em;
+}
+
+.scoutLead {
+    max-width: 400px;
+    margin: 45px 0 0;
+    color: rgba(247, 242, 234, 0.68);
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 2.3vw, 2.1rem);
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.scoutPortrait {
+    position: relative;
+    grid-area: portrait;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    background: #292724;
+}
+
+.scoutImage {
+    object-fit: cover;
+    object-position: center;
+    transition: transform 1.3s var(--ease-soft);
+}
+
+.scoutStory:hover .scoutImage {
+    transform: scale(1.018);
+}
+
+.scoutReflection {
+    grid-area: reflection;
+    align-self: end;
+    padding-bottom: 35px;
+}
+
+.scoutReflection>p {
+    margin: 0;
+    color: rgba(247, 242, 234, 0.67);
+    font-size: 0.98rem;
+    font-weight: 300;
+    line-height: 1.9;
+}
+
+.scoutReflection blockquote {
+    margin: 55px 0 0;
+    padding-top: 30px;
+    border-top: 1px solid rgba(247, 242, 234, 0.16);
+    color: #f7f2ea;
+    font-family: var(--font-display);
+    font-size: clamp(1.6rem, 2.4vw, 2.3rem);
+    font-style: italic;
+    line-height: 1.38;
+}
+
+/* ========================================
+   CHASING HORIZONS — LANDSCAPE
+   ======================================== */
+
+.horizonStory {
+    background: #151513;
+    color: #f7f2ea;
+}
+
+.horizonImage {
+    position: relative;
+    min-height: 92svh;
+    overflow: hidden;
+    background: #151513;
+}
+
+.horizonPhoto {
+    object-fit: cover;
+    object-position: center;
+    transition: transform 1.5s var(--ease-soft);
+}
+
+.horizonStory:hover .horizonPhoto {
+    transform: scale(1.015);
+}
+
+.horizonOverlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+        linear-gradient(90deg,
+            rgba(11, 11, 10, 0.66) 0%,
+            rgba(11, 11, 10, 0.25) 48%,
+            rgba(11, 11, 10, 0.08) 100%),
+        linear-gradient(0deg,
+            rgba(11, 11, 10, 0.42) 0%,
+            transparent 50%);
+}
+
+.horizonTitle {
+    position: absolute;
+    bottom: 75px;
+    left: max(48px, calc((100vw - 1320px) / 2));
+    z-index: 2;
+}
+
+.horizonTitle p {
+    margin: 0 0 24px;
+    color: #c29a66;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+}
+
+.horizonTitle h3 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(4.7rem, 8.5vw, 8.8rem);
+    font-weight: 400;
+    line-height: 0.82;
+    letter-spacing: -0.05em;
+}
+
+.horizonReflection {
+    width: min(760px, calc(100% - 96px));
+    margin: 0 auto;
+    padding: 135px 0 155px;
+}
+
+.horizonLead {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(2.35rem, 4vw, 3.9rem);
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+}
+
+.horizonBody {
+    max-width: 590px;
+    margin: 48px 0 0;
+    color: rgba(247, 242, 234, 0.67);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.9;
+}
+
+.horizonReflection blockquote {
+    margin: 68px 0 0;
+    padding-top: 34px;
+    border-top: 1px solid rgba(247, 242, 234, 0.16);
+    color: #f7f2ea;
+    font-family: var(--font-display);
+    font-size: clamp(1.7rem, 2.8vw, 2.6rem);
+    font-style: italic;
+    line-height: 1.36;
+}
+
+/* ========================================
+   TELLING STORIES — SPLIT EDITORIAL
+   ======================================== */
+
+.writerStory {
+    display: grid;
+    grid-template-columns: 1.12fr 0.88fr;
+    min-height: 88vh;
+    background: #eee5d8;
+    color: #292521;
+}
+
+.writerImage {
+    position: relative;
+    min-height: 88vh;
+    overflow: hidden;
+    background: #1c1b18;
+}
+
+.writerPhoto {
+    object-fit: cover;
+    object-position: center;
+    transition: transform 1.4s var(--ease-soft);
+}
+
+.writerStory:hover .writerPhoto {
+    transform: scale(1.016);
+}
+
+.writerCopy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 95px clamp(48px, 7vw, 120px);
+}
+
+.writerEyebrow {
+    margin: 0 0 26px;
+    color: #8b6b45;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.27em;
+}
+
+.writerCopy h3 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(4rem, 6.6vw, 6.8rem);
+    font-weight: 400;
+    line-height: 0.87;
+    letter-spacing: -0.045em;
+}
+
+.writerLead {
+    max-width: 500px;
+    margin: 45px 0 0;
+    color: #4b453f;
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 2.4vw, 2.2rem);
+    line-height: 1.4;
+}
+
+.writerBody {
+    max-width: 490px;
+    margin: 38px 0 0;
+    color: #655d54;
+    font-size: 0.98rem;
+    font-weight: 300;
+    line-height: 1.9;
+}
+
+.writerCopy blockquote {
+    max-width: 500px;
+    margin: 58px 0 0;
+    padding-top: 30px;
+    border-top: 1px solid rgba(47, 43, 40, 0.18);
+    color: #3f3934;
+    font-family: var(--font-display);
+    font-size: clamp(1.6rem, 2.35vw, 2.25rem);
+    font-style: italic;
+    line-height: 1.38;
+}
+
+/* ========================================
+   LEARNING TO BELIEVE
+   ======================================== */
+
+.faithStory {
+    position: relative;
+    min-height: 100svh;
+    overflow: hidden;
+    background: #151513;
+    color: #f7f2ea;
+}
+
+.faithImage {
+    position: absolute;
+    inset: 0;
+}
+
+.faithPhoto {
+    object-fit: cover;
+    object-position: center;
+}
+
+.faithOverlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg,
+            rgba(15, 14, 12, 0.9) 0%,
+            rgba(15, 14, 12, 0.72) 42%,
+            rgba(15, 14, 12, 0.22) 100%);
+}
+
+.faithCopy {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: min(1320px, calc(100% - 96px));
+    min-height: 100svh;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+
+.faithEyebrow {
+    margin: 0 0 27px;
+    color: #c29a66;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+}
+
+.faithCopy h3 {
+    max-width: 720px;
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(4.5rem, 8vw, 8rem);
+    font-weight: 400;
+    line-height: 0.84;
+    letter-spacing: -0.05em;
+}
+
+.faithLead {
+    max-width: 560px;
+    margin: 46px 0 0;
+    font-family: var(--font-display);
+    font-size: clamp(1.6rem, 2.5vw, 2.3rem);
+    line-height: 1.4;
+}
+
+.faithBody {
+    max-width: 540px;
+    margin: 35px 0 0;
+    color: rgba(247, 242, 234, 0.68);
+    font-size: 0.98rem;
+    font-weight: 300;
+    line-height: 1.9;
+}
+
+.faithCopy blockquote {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 570px;
+    margin: 55px 0 0;
+    padding-top: 30px;
+    border-top: 1px solid rgba(247, 242, 234, 0.18);
+    font-family: var(--font-display);
+    font-size: clamp(1.7rem, 2.7vw, 2.5rem);
+    font-style: italic;
+    line-height: 1.35;
+}
+
+.faithCopy blockquote span {
+    color: #c29a66;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.62rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+/* ========================================
+   LEAVING A LEGACY
+   ======================================== */
+
+.legacyStory {
+    display: flex;
+    align-items: center;
+    min-height: 100svh;
+    padding: 150px 48px;
+    background: #f3eee5;
+    color: #292521;
+}
+
+.legacyInner {
+    width: min(1160px, 100%);
+    margin: 0 auto;
+}
+
+.legacyEyebrow {
+    margin: 0 0 30px;
+    color: #8b6b45;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+}
+
+.legacyInner h3 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(4.5rem, 8vw, 8rem);
+    font-weight: 400;
+    line-height: 0.84;
+    letter-spacing: -0.05em;
+}
+
+.legacyLead {
+    max-width: 630px;
+    margin: 55px 0 0;
+    color: #625a52;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.legacyStatement {
+    max-width: 990px;
+    margin: 85px 0 0;
+    font-family: var(--font-display);
+    font-size: clamp(2.8rem, 5vw, 5.2rem);
+    line-height: 1.04;
+    letter-spacing: -0.035em;
+}
+
+.legacyBody {
+    max-width: 600px;
+    margin: 55px 0 0 auto;
+    color: #655d54;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.9;
+}
+
+.legacyRule {
+    width: 100%;
+    height: 1px;
+    margin-top: 90px;
+    background: rgba(47, 43, 40, 0.17);
+}
+
+.legacyInner blockquote {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 45px 0 0;
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    font-style: italic;
+}
+
+.legacyInner blockquote span {
+    color: #8b6b45;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.62rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+/* ========================================
+   NEXT CHAPTER
+   ======================================== */
+
+.nextChapter {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 28px;
+    width: min(1320px, calc(100% - 96px));
+    margin: 0 auto;
+    padding: 45px 0 48px;
+    border-top: 1px solid rgba(47, 43, 40, 0.16);
+}
+
+.nextChapter span {
+    color: #8b6b45;
+    font-size: 0.55rem;
+    font-weight: 700;
+    letter-spacing: 0.24em;
+}
+
+.nextChapter p {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+}
+
+.nextChapter i {
+    display: block;
+    width: 80px;
+    height: 1px;
+    background: #8b6b45;
+}
+
+/* ========================================
+   TABLET
+   ======================================== */
+
+@media (max-width: 1000px) {
+    .introduction {
+        width: calc(100% - 64px);
+    }
+
+    .imageTitle {
+        left: 32px;
+    }
+
+    .reflection {
+        grid-template-columns: 80px minmax(0, 640px);
+        gap: 42px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .scoutStory {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .scoutInner {
+        grid-template-columns: 0.8fr minmax(300px, 440px);
+        grid-template-areas:
+            "heading portrait"
+            "reflection portrait";
+        gap: 50px;
+    }
+
+    .scoutHeading {
+        padding-top: 20px;
+    }
+
+    .scoutReflection {
+        align-self: start;
+        padding-bottom: 0;
+    }
+
+    .nextChapter {
+        width: calc(100% - 64px);
+    }
+}
+
+/* ========================================
+   MOBILE
+   ======================================== */
+.writerStory {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.writerImage {
+    min-height: 72vw;
+}
+
+.writerCopy {
+    padding: 85px 20px 100px;
+}
+
+.writerCopy h3 {
+    font-size: clamp(3.8rem, 17vw, 5.2rem);
+}
+
+.writerLead {
+    margin-top: 34px;
+    font-size: 1.45rem;
+}
+
+.writerBody {
+    margin-top: 32px;
+    font-size: 0.96rem;
+}
+
+.writerCopy blockquote {
+    margin-top: 48px;
+    font-size: 1.7rem;
+}
+
+.horizonImage {
+    min-height: 80svh;
+}
+
+.horizonPhoto {
+    object-position: center;
+}
+
+.horizonTitle {
+    right: 20px;
+    bottom: 48px;
+    left: 20px;
+}
+
+.horizonTitle h3 {
+    font-size: clamp(4rem, 18vw, 5.8rem);
+}
+
+.horizonReflection {
+    width: calc(100% - 40px);
+    padding: 92px 0 110px;
+}
+
+.horizonLead {
+    font-size: clamp(2.3rem, 11vw, 3.5rem);
+}
+
+.horizonBody {
+    margin-top: 38px;
+    font-size: 0.96rem;
+}
+
+.horizonReflection blockquote {
+    margin-top: 52px;
+    font-size: 1.7rem;
+}
+
+@media (max-width: 700px) {
+    .faithPhoto {
+        object-position: 58% center;
+    }
+
+    .faithOverlay {
+        background:
+            linear-gradient(0deg,
+                rgba(15, 14, 12, 0.9) 0%,
+                rgba(15, 14, 12, 0.58) 58%,
+                rgba(15, 14, 12, 0.22) 100%);
+    }
+
+    .faithCopy {
+        justify-content: flex-end;
+        width: calc(100% - 40px);
+        padding: 120px 0 65px;
+    }
+
+    .faithCopy h3 {
+        font-size: clamp(3.8rem, 17vw, 5.3rem);
+    }
+
+    .faithLead {
+        margin-top: 34px;
+        font-size: 1.4rem;
+    }
+
+    .faithBody {
+        margin-top: 28px;
+        font-size: 0.95rem;
+    }
+
+    .legacyStory {
+        min-height: 0;
+        padding: 105px 20px;
+    }
+
+    .legacyInner h3 {
+        font-size: clamp(3.8rem, 17vw, 5.3rem);
+    }
+
+    .legacyLead {
+        margin-top: 38px;
+    }
+
+    .legacyStatement {
+        margin-top: 62px;
+        font-size: clamp(2.6rem, 12vw, 4rem);
+    }
+
+    .legacyBody {
+        margin: 45px 0 0;
+    }
+
+    .legacyRule {
+        margin-top: 65px;
+    }
+
+    .introduction {
+        width: calc(100% - 40px);
+        padding: 105px 0 115px;
+    }
+
+    .chapterMarker {
+        margin-bottom: 50px;
+    }
+
+    .question {
+        margin-bottom: 32px;
+        font-size: 1.2rem;
+    }
+
+    .introduction h2 {
+        font-size: clamp(3.75rem, 17vw, 5.4rem);
+        line-height: 0.87;
+    }
+
+    .introText {
+        margin: 48px 0 0;
+        font-size: 0.96rem;
+        line-height: 1.75;
+    }
+
+    .imageStage {
+        min-height: 88svh;
+    }
+
+    .image {
+        object-position: 55% center;
+    }
+
+    .imageShade {
+        background:
+            linear-gradient(0deg,
+                rgba(15, 14, 12, 0.78) 0%,
+                rgba(15, 14, 12, 0.24) 55%,
+                rgba(15, 14, 12, 0.08) 100%);
+    }
+
+    .imageTitle {
+        right: 20px;
+        bottom: 48px;
+        left: 20px;
+    }
+
+    .imageTitle span {
+        margin-bottom: 18px;
+        font-size: 0.55rem;
+    }
+
+    .imageTitle h3 {
+        font-size: clamp(4rem, 18vw, 5.8rem);
+        line-height: 0.84;
+    }
+
+    .reflection {
+        display: block;
+        padding: 92px 20px 110px;
+    }
+
+    .reflectionNumber {
+        margin-bottom: 45px;
+        font-size: 1.1rem;
+    }
+
+    .role {
+        margin-bottom: 28px;
+    }
+
+    .lead {
+        font-size: clamp(2.3rem, 11vw, 3.5rem);
+    }
+
+    .body {
+        margin-top: 40px;
+        font-size: 0.96rem;
+        line-height: 1.8;
+    }
+
+    .reflection blockquote {
+        margin-top: 55px;
+        padding-top: 30px;
+        font-size: 1.7rem;
+    }
+
+    /* Scout portrait layout */
+
+    .scoutStory {
+        padding: 95px 20px 110px;
+    }
+
+    .scoutInner {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .scoutHeading {
+        order: 1;
+        padding: 0;
+    }
+
+    .scoutHeading h3 {
+        font-size: clamp(3.8rem, 17vw, 5.2rem);
+    }
+
+    .scoutLead {
+        margin-top: 32px;
+        font-size: 1.45rem;
+    }
+
+    .scoutPortrait {
+        order: 2;
+        width: min(100%, 430px);
+        margin: 58px auto 0;
+        aspect-ratio: 4 / 5;
+    }
+
+    .scoutReflection {
+        order: 3;
+        margin-top: 58px;
+        padding: 0;
+    }
+
+    .scoutReflection blockquote {
+        margin-top: 45px;
+        font-size: 1.7rem;
+    }
+
+    .nextChapter {
+        grid-template-columns: auto 1fr;
+        width: calc(100% - 40px);
+        padding: 34px 0 36px;
+    }
+
+    .nextChapter i {
+        display: none;
+    }
+}
+
+/* ========================================
+   CHAPTER III — STORIES WORTH SHARING
+   ======================================== */
+
+.library {
+    position: relative;
+    overflow: hidden;
+    padding: 155px 48px 175px;
+    background: #ebe3d5;
+    color: #292521;
+}
+
+.libraryInner {
+    width: min(1280px, 100%);
+    margin: 0 auto;
+}
+
+.libraryQuestion {
+    max-width: 600px;
+    margin: 0 0 42px;
+    color: #6d655c;
+    font-family: var(--font-display);
+    font-size: clamp(1.35rem, 2vw, 1.9rem);
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.library h2 {
+    max-width: 950px;
+    margin: 0;
+    color: #292521;
+    font-family: var(--font-display);
+    font-size: clamp(4.2rem, 8vw, 8rem);
+    font-weight: 400;
+    line-height: 0.86;
+    letter-spacing: -0.05em;
+}
+
+/* CATEGORY LINKS */
+
+.libraryLinks {
+    margin-top: 115px;
+    border-top: 1px solid rgba(47, 43, 40, 0.18);
+}
+
+.libraryLink {
+    display: grid;
+    grid-template-columns: 70px 1fr auto;
+    align-items: center;
+    gap: 30px;
+    min-height: 150px;
+    padding: 28px 0;
+    border-bottom: 1px solid rgba(47, 43, 40, 0.18);
+    color: #292521;
+    text-decoration: none;
+
+    transition:
+        padding-left 300ms var(--ease-soft),
+        background 300ms var(--ease-soft);
+}
+
+.libraryLink:hover {
+    padding-left: 18px;
+}
+
+.libraryNumber {
+    color: rgba(47, 43, 40, 0.3);
+    font-family: var(--font-display);
+    font-size: 1rem;
+}
+
+.libraryLink div {
+    min-width: 0;
+}
+
+.libraryLink p {
+    margin: 0 0 7px;
+    color: #8b6b45;
+    font-size: 0.56rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+}
+
+.libraryLink h3 {
+    margin: 0;
+    color: #292521;
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 3.3vw, 3.4rem);
+    font-weight: 400;
+    line-height: 1;
+}
+
+.libraryArrow {
+    color: #8b6b45;
+    font-size: 1.4rem;
+    transition: transform 300ms var(--ease-soft);
+}
+
+.libraryLink:hover .libraryArrow {
+    transform: translate(5px, -5px);
+}
+
+/* ========================================
+   LIBRARY — TABLET
+   ======================================== */
+
+@media (max-width: 1000px) {
+    .library {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .libraryLinks {
+        margin-top: 90px;
+    }
+
+    .libraryLink {
+        min-height: 135px;
+    }
+}
+
+/* ========================================
+   LIBRARY — MOBILE
+   ======================================== */
+
+@media (max-width: 700px) {
+    .library {
+        padding: 100px 20px 115px;
+    }
+
+    .libraryQuestion {
+        margin-bottom: 32px;
+        font-size: 1.2rem;
+    }
+
+    .library h2 {
+        font-size: clamp(3.7rem, 16vw, 5.4rem);
+        line-height: 0.88;
+    }
+
+    .libraryLinks {
+        margin-top: 75px;
+    }
+
+    .libraryLink {
+        grid-template-columns: 38px minmax(0, 1fr) auto;
+        gap: 14px;
+        min-height: 115px;
+        padding: 24px 0;
+    }
+
+    .libraryLink:hover {
+        padding-left: 0;
+    }
+
+    .libraryNumber {
+        font-size: 0.85rem;
+    }
+
+    .libraryLink p {
+        font-size: 0.5rem;
+        letter-spacing: 0.18em;
+    }
+
+    .libraryLink h3 {
+        font-size: clamp(1.8rem, 8vw, 2.4rem);
+    }
+
+    .libraryArrow {
+        font-size: 1.1rem;
+    }
+}
